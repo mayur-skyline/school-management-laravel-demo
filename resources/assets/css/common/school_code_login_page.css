@@ -1,0 +1,162 @@
+#forgot-school-code-help-box{
+    padding: 10px;
+    background-color: #e1b202;
+    color: #fefefe;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #aaa;
+    border: 1px solid #ddd;
+    width: auto;
+    float: left;
+    margin-left: 3%;
+    display: none;
+}
+#school-code-div{
+    float: left;
+    margin-left: 35%;
+}
+#steer-support-link{
+    color: #428bca;
+    text-decoration: underline;
+}
+#forgot-school-code-link{
+    line-height: inherit;
+    color: #fdcb0e;
+    text-decoration: none;
+    cursor: pointer;
+}
+#close-helpbox-btn{
+    float: right;
+    margin: -5px;
+    color: #000;
+    cursor: pointer;
+    font-size: 15px;
+}
+#school-code-error-msg{
+    padding: 10px;
+    background-color: #e1b202;
+    color: #fefefe;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #aaa;
+    border: 1px solid #ddd;
+    width: 310px;
+    float: left;
+}
+#school-code-error-div{
+    width: 70%;
+    float: left;
+    margin-bottom: 1%;
+}
+.newdiv{
+    display: block;
+    margin-left: 42%;
+}
+.new-border{
+    margin: auto;
+    float: left;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 6px;
+    width: 300px;
+    border: 2px solid rgb(11, 30, 46);
+    margin-right: 2%;
+}
+#new-forgot-school-code-help-box{
+    padding: 10px;
+    background-color: #e1b202;
+    color: #fefefe;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #aaa;
+    border: 1px solid #ddd;
+    float: left;
+    word-break: break-word;
+    margin-right: 1%;
+    display: none;
+}
+
+@media only screen and (width: 2560px) {
+    #school-code-error-msg{
+        width: 33%;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    #school-code-error-msg{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .newdiv {
+        margin-left: 30%;
+    }
+    .new-border{
+        width: 275px;
+    }
+    #new-forgot-school-code-help-box{
+        width: 200px;
+    }
+    #school-code-error-div{
+        width: 200px;
+    }
+    #school-code-error-msg{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px){
+    .newdiv {
+        margin-left: 8%;
+    }
+    .new-border{
+        width: 185px;
+    }
+    #new-forgot-school-code-help-box{
+        width: 185px;
+    }
+    #school-code-error-div{
+        width: 185px;
+    }
+}
+@media screen and (max-width: 375px){
+    .newdiv {
+        margin-left: 8%;
+    }
+    .new-border{
+        width: 166px;
+    }
+    #new-forgot-school-code-help-box{
+        width: 163px;
+    }
+    #school-code-error-div{
+        width: 163px;
+    }
+}
+@media screen and (max-width: 320px){
+    .newdiv {
+        margin-left: 8%;
+    }
+    .new-border{
+        width: 160px;
+    }
+    #new-forgot-school-code-help-box{
+        width: 125px;
+    }
+    #school-code-error-div{
+        width: 125px;
+    }
+}
+@media screen and (width: 1024px){
+    .newdiv {
+        margin-left: 38%;
+    }
+    #school-code-error-div{
+        width: 48%;
+    }
+    #school-code-error-msg{
+        width: 100%;
+    }
+}

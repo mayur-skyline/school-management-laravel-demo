@@ -1,0 +1,167 @@
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --plump-purple: hwb(244 31% 23%);
+  --dolphin-3: rgb(98, 96, 115);
+  --dolphin-2: rgba(99, 97, 116, 0.18);
+  --dolphin: rgba(99, 97, 116, 1);
+  --dove-gray: rgba(112, 112, 112, 1);
+  --fern: rgba(123, 178, 123, 1);
+  --envy: rgba(137, 183, 137, 1);
+  --mountain-mist: rgba(152, 152, 152, 1);
+  --mongoose: rgba(178, 161, 111, 1);
+  --bombay: rgba(180, 180, 182, 1);
+  --bittersweet-shimmer: rgba(196, 78, 78, 1);
+  --bittersweet-shimmer-light: rgba(196, 78, 78);
+  --ghost: rgba(200, 200, 202, 1);
+  --ghost-2: rgba(201, 201, 202, 1);
+  --new-york-pink: rgba(222, 123, 125, 1);
+  --risk-disc: rgba(208, 114, 114);
+  --risk-text: rgba(31, 31, 31);
+  --gin: rgba(232, 240, 232, 1);
+  --corn: rgba(235, 191, 3, 1);
+  --white-lilac: rgba(246, 247, 251, 1);
+  --pot-pourri: rgba(249, 231, 231, 1);
+  --supernova: rgb(255, 212, 74);
+  --supernova-light: rgb(240, 195, 14);
+  --candlelight: rgba(255, 211, 26, 1);
+  --remy: rgba(255, 234, 240, 0.576);
+  --pipi: rgba(255, 245, 202, 1);
+  --pipi-light: rgba(252, 244, 244);
+  --white-2: rgba(255, 255, 255, 0.004);
+  --white: rgba(255, 255, 255, 1);
+  --lavender: #e3e2ff;
+
+  --lightgray: #fafafd;
+  --grayscale: #f2f2fa;
+
+  --font-size-xs: 10px;
+  --font-size-s: 12px;
+  --font-size-m: 13px;
+  --font-size-l: 14px;
+  --font-size-xl: 15px;
+  --font-size-xxl: 16px;
+  --font-size-xxxl: 30px;
+
+  --red: var(--new-york-pink);
+  --amber: var(--supernova);
+  --green: var(--fern);
+  --blue: var(--plump-purple);
+  --orange: rgba(255, 169, 51, 1);
+  --vivid-orange: rgba(236, 119, 47, 1);
+  --vivid-orange-alt: rgba(255, 163, 106, 1);
+  --gray: var(--dolphin);
+  --aqua: rgba(170, 218, 221, 1);
+
+  --red-alt: var(--pot-pourri);
+  --amber-alt: #fcf1cf;
+  --green-alt: var(--gin);
+  --blue-alt: var(--lavender);
+  --orange-alt: lighten(255, 223, 203, 1);
+  // #ec772f
+  // RGB(236, 119, 47)
+  --gray-alt: var(--ghost);
+  --aqua-alt: rgba(171, 218, 222, 0.2);
+
+  --red-alt-2: lighten(var(--new-york-pink), 20%);
+  --amber-alt-2: lighten(var(--supernova), 20%);
+  --green-alt-2: lighten(var(--fern), 20%);
+  --blue-alt-2: lighten(var(--plump-purple), 20%);
+  --orange-alt-2: lighten(var(--orange), 20%);
+  --gray-alt-2: lighten(var(--ghost), 20%);
+
+  --red-transparent: rgba(var(--red), 0.2);
+  --amber-transparent: rgba(var(--amber), 0.2);
+  --green-transparent: rgba(var(--green), 0.2);
+  --blue-transparent: rgba(var(--blue), 0.2);
+  --orange-transparent: rgba(var(--orange), 0.2);
+  --gray-transparent: rgba(rgba(var(--gray), 0.2));
+  --aqua-transparent: rgba(171, 218, 222, 0.2);
+
+  --font-family-aktivgrotesk-regular: 'AktivGrotesk-Regular';
+  --font-family-manrope: 'Manrope';
+  --font-family-source_sans_pro: 'Source Sans Pro';
+}
+
+// default
+$black: rgba(0, 0, 0, 1);
+$plump-purple: rgba(85, 78, 196, 1);
+$denim-blue: rgb(35, 75, 187);
+$supernova-dark: rgb(251, 203, 11);
+$terracotta: rgb(227, 99, 99);
+$dolphin-3: rgba(98, 96, 115, 1);
+$dolphin-2: rgba(99, 97, 116, 0.18);
+$dolphin: rgba(99, 97, 116, 1);
+$dove-gray: rgba(112, 112, 112, 1);
+$fern: rgba(123, 178, 123, 1);
+$envy: rgba(137, 183, 137, 1);
+$mountain-mist: rgba(152, 152, 152, 1);
+$mongoose: rgb(178, 161, 111);
+$bombay: rgba(180, 180, 182, 1);
+$bittersweet-shimmer: rgba(196, 78, 78, 1);
+$bittersweet-shimmer-light: rgba(196, 78, 78);
+$ghost: rgba(200, 200, 202, 1);
+$ghost-2: rgba(201, 201, 202, 1);
+$new-york-pink: rgba(222, 123, 125, 1);
+$gin: rgba(232, 240, 232, 1);
+$corn: rgba(235, 191, 3, 1);
+$white-lilac: rgba(246, 247, 251, 1);
+$pot-pourri: rgba(249, 231, 231, 1);
+$supernova: rgb(253, 215, 92);
+$supernova-light: rgb(255, 204, 2);
+$candlelight: rgba(240, 195, 14);
+$remy: rgba(255, 234, 240, 0.576);
+$risk-disc: rgba(208, 114, 114);
+$risk-text: rgba(31, 31, 31);
+$pipi: rgba(255, 249, 228, 1);
+$pipi-light: rgba(252, 244, 244);
+$white-2: rgba(255, 255, 255, 0.004);
+$white: rgba(255, 255, 255, 1);
+$lavender: rgba(239, 238, 255, 1);
+$orange: rgba(255, 169, 51, 1);
+$vivid-orange: rgba(236, 119, 47, 1);
+$vivid-orange-alt: rgba(255, 163, 106, 1);
+$orange-alt: rgba(255, 223, 203, 1);
+
+// custom
+$red: $new-york-pink;
+$risk-disc: $risk-disc;
+$risk-text: $risk-text;
+$bittersweet-shimmer-light: $bittersweet-shimmer-light;
+$amber: $supernova;
+$amber-light: $supernova-light;
+$green: $fern;
+$blue: $plump-purple;
+$gray: $dolphin;
+$aqua: rgba(170, 218, 221, 1);
+
+$red-alt: $pot-pourri;
+$amber-alt: #fcf1cf;
+$green-alt: $gin;
+$blue-alt: $lavender;
+$gray-alt: $ghost;
+$aqua-alt: rgba(171, 218, 222, 0.2);
+$red-alt-2: lighten($red, 20%);
+$amber-alt-2: lighten($corn, 20%);
+$green-alt-2: lighten($green, 20%);
+$blue-alt-2: lighten($blue, 20%);
+$orange-alt-2: lighten($orange, 20%);
+$gray-alt-2: lighten($gray, 20%);
+
+$red-transparent: rgba($red, 0.2);
+$amber-transparent: rgba($corn, 0.2);
+$green-transparent: rgba($green, 0.2);
+$blue-transparent: rgba($blue, 0.2);
+$orange-transparent: rgba($orange, 0.2);
+$gray-transparent: rgba($gray, 0.2);
+$aqua-transparent: rgba(171, 218, 222, 0.2);
+
+$red-transparent-2: rgba($red, 0.1);
+$amber-transparent-2: rgba($corn, 0.1);
+$green-transparent-2: rgba($green, 0.1);
+$blue-transparent-2: rgba($blue, 0.1);
+$orange-transparent-2: rgba($orange, 0.1);
+$gray-transparent-2: rgba($gray, 0.1);
+$aqua-transparent-2: rgba(171, 218, 222, 0.1);
+
+$lightgray: #fafafd;
+$grayscale: #f2f2fa;

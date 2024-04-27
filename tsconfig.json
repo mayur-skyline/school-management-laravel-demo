@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "ES2017",
+      "ES2018",
+      "ES2019"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "checkJs": true,
+    "incremental": true,
+    "noUncheckedIndexedAccess": true,
+    "types": [
+      "node",
+      "react",
+      "react-dom"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+      "./resources/astnext/src/@types"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@astnext/*": ["resources/astnext/src/*"],
+      "@sga/*": ["resources/sga/src/*"],
+      "@atom/*": ["resources/atom/src/*"]
+    }
+  },
+  "include": [
+    "resources/astnext/**/*.ts",
+    "resources/astnext/**/*.tsx",
+    "resources/sga/**/*.ts",
+    "resources/sga/**/*.tsx",
+    "resources/atom/**/*.ts",
+    "resources/atom/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

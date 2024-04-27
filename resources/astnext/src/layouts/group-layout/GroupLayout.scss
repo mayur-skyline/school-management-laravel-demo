@@ -1,0 +1,19 @@
+.group-layout {
+
+}
+
+@media print {
+  .group-layout {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .sidenav {
+    display: none;
+
+    .nav-menu {
+      display: none;
+      width: 0 !important;
+    }
+  }
+}

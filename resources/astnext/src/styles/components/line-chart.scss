@@ -1,0 +1,15 @@
+.line-chart {
+  .chart {
+    z-index: 10;
+    position: relative;
+  }
+
+  .y-label {
+    position: relative;
+    z-index: 5;
+    color: gray;
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+}

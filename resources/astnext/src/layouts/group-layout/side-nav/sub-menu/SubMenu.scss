@@ -1,0 +1,14 @@
+.menu-item {
+  .menu-body {
+    font-size: 14px !important;
+    transition: transform 250ms;
+    opacity: 0.5;
+
+    &:hover{
+      font-size: 14px !important;
+      transform: translateX(5px);
+      color: #514E6A;
+      opacity: 1;
+    }
+  }
+}

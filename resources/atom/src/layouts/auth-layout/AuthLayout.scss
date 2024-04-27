@@ -1,0 +1,23 @@
+.form-box {
+  background-color: rgb(255 255 255);
+  bottom: calc(41.84% - 187px);
+  padding: 3rem 3.5rem;
+  min-height: 447px;
+  width: 425px;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px #00000010;
+  display: flex;
+  flex-direction: column;
+
+  div[data-lastpass-icon-root] {
+    display: none;
+  }
+}
+.eyes {
+  margin-left: 334px;
+  margin-top: -15px;
+  width: 18px;
+  position: absolute;
+  z-index: 111 !important;
+}

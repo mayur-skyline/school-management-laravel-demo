@@ -1,0 +1,42 @@
+@import "../colors";
+
+.MuiTextField-root {
+  &.custom-input {
+    width: 100%;
+
+    .MuiInputBase-root {
+      padding: 0 20px 0 20px !important;
+      border-radius: 10px;
+      background-color: $lightgray;
+      width: 100%;
+
+      &:before {
+        border-bottom: 0;
+      }
+
+      &:after {
+
+      }
+
+      .MuiInputBase-input {
+      }
+
+      .MuiOutlinedInput-notchedOutline {
+        border-color: transparent;
+        transition: all 0.3s;
+
+        &:hover {
+          border-color: $gray-alt-2;
+        }
+      }
+
+      &.Mui-focused {
+        .MuiOutlinedInput-notchedOutline {
+          border-color: $gray-alt-2 !important;
+        }
+      }
+    }
+  }
+}
+
+

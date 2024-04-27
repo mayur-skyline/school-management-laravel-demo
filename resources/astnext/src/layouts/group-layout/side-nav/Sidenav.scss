@@ -1,0 +1,38 @@
+.group-sidenav {
+  @media print {
+    display: none;
+  }
+  
+  .nav-menu {
+    background-color: #FAFAFD !important;
+    border-left: 1px solid #b0aaac14;
+    // align-items: flex-end;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 60px 13.6px 70px 13.6px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    z-index: 1;
+
+    .nav-logo {
+      align-items: center;
+      align-self: center;
+      display: flex;
+      margin-bottom: 30px;
+      width: 179px;
+    }
+
+    .divide {
+      align-self: center;
+      margin: 25px auto 25px auto;
+      height: 1px;
+      background-color: #C7C7D0;
+      width: 166px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import '../variables';
+
+:export {
+  red: $red;
+  red-alt: $red-alt;
+  red-transparent: $red-transparent;
+  amber: $amber;
+  amber-alt: $amber-alt;
+  amber-transparent: $amber-transparent;
+  green: $green;
+  green-alt: $green-alt;
+  green-transparent: $green-transparent;
+  blue: $blue;
+  blue-alt: $blue-alt;
+  blue-transparent: $blue-transparent;
+  orange: $orange;
+  orange-alt: $orange-alt;
+  orange-transparent: $orange-transparent;
+  gray: $gray;
+  gray-alt: $gray-alt;
+  gray-transparent: $gray-transparent;
+  aqua: $aqua;
+  aqua-alt: $aqua-alt;
+  aqua-transparent: $aqua-transparent;
+  white: $white;
+  lightgray: $lightgray;
+  grayscale: $grayscale;
+}

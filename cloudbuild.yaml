@@ -1,0 +1,40 @@
+steps:
+
+#Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  entrypoint: 'bash'
+  args: ['-c','docker build --build-arg ENV_URL=$$ENVURL -t gcr.io/steer-production-a/ast-prod:$COMMIT_SHA .']
+  secretEnv: ['ENVURL']
+
+#Push the container image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/steer-production-a/ast-prod:$COMMIT_SHA']
+
+  # Deploy container image to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args: ['beta', 'run', 'deploy', 'astracking-live-ew2', '--image', 'gcr.io/steer-production-a/ast-prod:$COMMIT_SHA', '--region', 'europe-west2', '--cpu', '8', '--memory', '8Gi', '--max-instances', '500','--min-instances', '0','--concurrency', '50', '--timeout', '3600', '--vpc-connector', 'vpc-london-sql','--execution-environment','gen2','--allow-unauthenticated','--cpu-boost','--cpu-throttling']
+
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args: ['beta', 'run', 'deploy', 'astracking-live-ew1', '--image', 'gcr.io/steer-production-a/ast-prod:$COMMIT_SHA', '--region', 'europe-west1', '--cpu', '8', '--memory', '8Gi', '--max-instances', '500','--min-instances', '0','--concurrency', '50', '--timeout', '3600', '--vpc-connector', 'vpc-euwest1-sql','--execution-environment','gen2','--allow-unauthenticated','--cpu-boost','--cpu-throttling']
+
+# - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#   entrypoint: gcloud
+#   args: ['beta', 'run', 'deploy', 'astracking-live-usc1', '--image', 'gcr.io/steer-production-a/ast-prod:$COMMIT_SHA', '--region', 'us-central1', '--cpu', '2', '--memory', '2Gi', '--min-instances', '1', '--max-instances', '1000','--concurrency', '80', '--timeout', '3600', '--vpc-connector', 'vpc-centralus','--execution-environment','gen2','--no-cpu-throttling','--allow-unauthenticated']
+
+# - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#   entrypoint: gcloud
+#   args: ['beta', 'run', 'deploy', 'astracking-live-sea1', '--image', 'gcr.io/steer-production-a/ast-prod:$COMMIT_SHA', '--region', 'asia-southeast1', '--cpu', '2', '--memory', '2Gi', '--min-instances', '1', '--max-instances', '1000','--concurrency', '80', '--timeout', '3600', '--vpc-connector', 'vpc-sea','--execution-environment','gen2','--no-cpu-throttling','--allow-unauthenticated']
+
+images:
+- gcr.io/steer-production-a/ast-prod:$COMMIT_SHA
+
+availableSecrets:
+  secretManager:
+  - versionName: projects/steer-production-a/secrets/AST_PROD_ENVURL/versions/latest
+    env: 'ENVURL'
+
+timeout: '2400s'
+options:
+  machineType: 'E2_HIGHCPU_32'
